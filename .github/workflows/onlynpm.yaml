@@ -16,7 +16,7 @@ jobs:
 
   test:
     needs: build
-    runs-on: ${{needs.build.outputs.runner}}
+    runs-on: ${{ needs.build.outputs.runner }}
     steps:
       - name: run test
         run: npm test
