@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Setup-node
-      if: steps.npmCacheStep.outputd.cache-hit != 'true'
+      if: steps.npmCache.outputd.cache-hit != 'true'
       uses: actions/setup-node@v3
       id: npmCache
       with:
